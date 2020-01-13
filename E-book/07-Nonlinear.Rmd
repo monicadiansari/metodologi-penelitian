@@ -1,0 +1,35 @@
+# Nonlinear
+
+## Polynomial Regression
+
+## Step Functions
+
+## Basis Functions
+
+## Regression Splines
+### Piecewise Polynomials
+### Constraints and Splines
+### The Spline Basis Representation
+### Choosing the Number and Locations of the Knots
+### Comparison to Polynomial Regression
+
+
+## Smoothing Splines
+### An Overview of Smoothing Splines 
+### Choosing the Smoothing Parameter $\lambda$ 
+
+
+## Local Regression
+
+## Generalized Additive Models
+### GAMs for Regression Problems
+### GAMs for Classiﬁcation Problems
+
+## Lab: Non-linear Modeling
+### Polynomial Regression and Step Functions
+### Splines
+### GAMs
+
+
+
+

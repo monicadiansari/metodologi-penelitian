@@ -1,0 +1,40 @@
+# Seleksi dan Regulasi Model Linear
+
+## Subset Selection
+### Best Subset Selection
+### Stepwise Selection
+### Choosing the Optimal Model
+
+
+## Shrinkage Methods
+### Ridge Regression
+### The Lasso
+### Selecting the Tuning Parameter
+
+
+## Dimension Reduction Methods
+### Principal Components Regression
+### Partial Least Squares
+
+
+## Considerations in High Dimensions
+### High-Dimensional Data
+### What Goes Wrong in High Dimensions?
+### Regression in High Dimensions
+### Interpreting Results in High Dimensions
+
+
+## Lab 1: Subset Selection Methods
+### Best Subset Selection
+### Forward and Backward Stepwise Selection
+### Choosing Among Models Using the Validation Set Approach and Cross-Validation
+
+
+## Lab 2: Ridge Regression and the Lasso
+### Ridge Regression
+### The Lasso
+
+
+## Lab 3: PCR and PLS Regression
+### Principal Components Regression
+### Partial Least Squares

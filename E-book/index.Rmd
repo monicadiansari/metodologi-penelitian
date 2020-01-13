@@ -1,0 +1,55 @@
+--- 
+title: "Komputasi Statistik"
+author: "Bakti Siregar"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: 
+description: ""
+---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'), 'packages.bib')
+```
+
+# Pendahuluan
+<div style="text-align: justify"> 
+
+Pengantar komputasi statistik ini di desain khusus untuk memudahkan mahasiswa, peneliti maupun profesional dalam memahami sekumpulan data yang luas dan kompleks yang sering muncul di bidang sains. Buku ini menyajikan beberapa teknik pemodelan dan prediksi yang berperan penting, bersama dengan aplikasi yang relevan. Topik meliputi Pengenalan Statistik *(Statistical Learning)*, Regresi Linier *(Linear Regression)*, Klasifikasi *(Classification)*, Resampling *(Resampling Methods)*, Seleksi dan Regulasi Model Linear *(Linear Model Selection and Regularization)*, Nonlinear *(Nonlinear Methods)*, Pohon Keputusan (Decision Tree Method),  Algoritma Machine Learning *(Support vector machine)*, Klasifikasi Nonlabel *(Unsupervised Classification)*, dan masih banyak lagi.
+
+Buku ini menggunakan grafik berwarna dan contoh kasus yang nyata digunakan untuk menggambarkan metode yang disajikan. Buku ini ditargetkan untuk untuk memfasilitasi penggunaan teknik pembelajaran statistik ini oleh para praktisi di bidang sains, industri, dan bidang lainnya, setiap bab berisi tutorial tentang penerapan analisis dan metode yang disajikan dalam [R](https://repo.bppt.go.id/cran/), platform perangkat lunak statistik sumber terbuka yang sangat populer.
+
+<br>
+**Kata Pengantar**
+<br>
+
+Puji syukur senantiasa kita panjatkan kehadirat Tuhan Yang Maha Esa atas semua limpahan rahmat-Nya sehingga tim dan saya dapat menyelesaikan penyusunan buku yang berjudul **"Komputasi Statistika"**, meskipun dengan sangat sederhana. Harapan kami, kirannya buku yang telah tersusun ini dapat bermanfaat menjadi salah satu rujukan maupun pedoman bagi para pembaca, menambah wawasan serta dapat menjadi inspirasi dalam memahami ilmu statistik.  
+
+Sebagai penulis, saya **Bakti Siregar M.Sc** mengakui bahwasanya masih banyak kekurangan yang terkandung di dalamnya. Oleh sebab itu, dengan penuh kerendahan hati saya berharap kepada para pembaca untuk memberikan kritik dan saran demi lebih memperbaiki buku ini.
+
+Tidak lupa, penulis juga mengucapkan terima kasih kepada semua pihak yang telah berjasa memberikan kontribusi dalam rangka menyelesaikan buku ini, yaitu kepada mahasiswa saya di Program Studi Statistika Matana University: 
+
+> 1. Endri Tri Wibowo (alamat email)
+> 2. Jihan Selianovira alamat email)
+> 3. Kevin Sugianto (alamat email)
+> 4. Ardiwan (alamat email)
+
+<br>
+**Tentang Penulis:**
+<br>
+Email      : siregarbakti@gmail.com / siregar.bakti@matanauniversity.ac.id <br>
+No.Whatsapp: 081369552544
+
+
+</div>
+
+
+
+
+
+

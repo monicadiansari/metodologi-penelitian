@@ -1,0 +1,29 @@
+# Regresi Linier 
+
+
+## Simple Linear Regression 
+### Estimating the Coeﬃcients
+### Assessing the Accuracy of the Coeﬃcient Estimates 
+### Assessing the Accuracy of the Model
+
+## Multiple Linear Regression
+### Estimating the Regression Coeﬃcients
+### Some Important Questions
+
+## Other Considerations in the Regression Model
+### Qualitative Predictors
+### Extensions of the Linear Model
+### Potential Problems
+
+## The Marketing Plan
+
+## Comparison of Linear Regression with K-Nearest Neighbors 
+
+## Lab: Linear Regression
+### Libraries
+### Simple Linear Regression
+### Multiple Linear Regression
+### Interaction Terms
+### Non-linear Transformations of the Predictors
+### Qualitative Predictors
+### Writing Functions

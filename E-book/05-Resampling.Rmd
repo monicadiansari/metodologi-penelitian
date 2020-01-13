@@ -1,0 +1,20 @@
+# Resampling (Pengambilan Sampel)
+
+## Cross-Validation
+### The Validation Set Approach
+### Leave-One-Out Cross-Validation
+### k-Fold Cross-Validation
+### Bias-Variance Trade-Oﬀ for k-Fold Cross-Validation 
+### Cross-Validation on Classiﬁcation Problems
+
+## The Bootstrap
+
+## Lab: Cross-Validation and the Bootstrap
+### The Validation Set Approach
+### Leave-One-Out Cross-Validation
+### k-Fold Cross-Validation
+### The Bootstrap
+
+
+
+

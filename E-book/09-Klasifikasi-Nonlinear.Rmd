@@ -1,0 +1,39 @@
+# Klasifikasi Nonlinear
+
+## Maximal Margin Classiﬁer
+### What Is a Hyperplane?
+### Classiﬁcation Using a Separating Hyperplane
+### The Maximal Margin Classiﬁer
+### Construction of the Maximal Margin Classiﬁer
+### The Non-separable Case
+
+## Support Vector Classiﬁers
+### Overview of the Support Vector Classiﬁer
+### Details of the Support Vector Classiﬁer
+
+
+## Support Vector Machines
+### Classiﬁcation with Non-linear Decision Boundaries
+### The Support Vector Machine
+### An Application to the Heart Disease Data
+
+## SVMs with More than Two Classes
+### One-Versus-One Classiﬁcation
+### One-Versus-All Classiﬁcation
+
+
+## Relationship to Logistic Regression
+
+
+## Lab: Support Vector Machines
+### Support Vector Classiﬁer
+### Support Vector Machine
+### ROC Curves
+### SVM with Multiple Classes
+### Application to Gene Expression Data
+
+
+
+
+
+

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Pengenalan Statistik | Komputasi Statistik</title>
+  <meta name="description" content="Chapter 2 Pengenalan Statistik | Komputasi Statistik" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Pengenalan Statistik | Komputasi Statistik" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Pengenalan Statistik | Komputasi Statistik" />
+  
+  
+  
+
+<meta name="author" content="Bakti Siregar" />
+
+
+<meta name="date" content="2020-01-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="regresi-linier.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ebook template by Bakti Siregar</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Pendahuluan</a></li>
+<li class="chapter" data-level="2" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html"><i class="fa fa-check"></i><b>2</b> Pengenalan Statistik</a><ul>
+<li class="chapter" data-level="2.1" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#what-is-statistical-learning"><i class="fa fa-check"></i><b>2.1</b> What Is Statistical Learning?</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#why-estimate-f"><i class="fa fa-check"></i><b>2.1.1</b> Why Estimate f?</a></li>
+<li class="chapter" data-level="2.1.2" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#how-do-we-estimate-f"><i class="fa fa-check"></i><b>2.1.2</b> How Do We Estimate f?</a></li>
+<li class="chapter" data-level="2.1.3" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#the-trade-o-between-prediction-accuracy-and-model-interpretability"><i class="fa fa-check"></i><b>2.1.3</b> The Trade-Oﬀ Between Prediction Accuracy and Model Interpretability</a></li>
+<li class="chapter" data-level="2.1.4" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#supervised-versus-unsupervised-learning"><i class="fa fa-check"></i><b>2.1.4</b> Supervised Versus Unsupervised Learning</a></li>
+<li class="chapter" data-level="2.1.5" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#regression-versus-classication-problems"><i class="fa fa-check"></i><b>2.1.5</b> Regression Versus Classiﬁcation Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#assessing-model-accuracy"><i class="fa fa-check"></i><b>2.2</b> Assessing Model Accuracy</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#measuring-the-quality-of-fit"><i class="fa fa-check"></i><b>2.2.1</b> Measuring the Quality of Fit</a></li>
+<li class="chapter" data-level="2.2.2" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#the-bias-variance-trade-o"><i class="fa fa-check"></i><b>2.2.2</b> The Bias-Variance Trade-Oﬀ</a></li>
+<li class="chapter" data-level="2.2.3" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#the-classication-setting"><i class="fa fa-check"></i><b>2.2.3</b> The Classiﬁcation Setting</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#introduction-to-r"><i class="fa fa-check"></i><b>2.3</b> Introduction to R</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#basic-commands"><i class="fa fa-check"></i><b>2.3.1</b> Basic Commands</a></li>
+<li class="chapter" data-level="2.3.2" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#graphics"><i class="fa fa-check"></i><b>2.3.2</b> Graphics</a></li>
+<li class="chapter" data-level="2.3.3" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#indexing-data"><i class="fa fa-check"></i><b>2.3.3</b> Indexing Data</a></li>
+<li class="chapter" data-level="2.3.4" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#loading-data"><i class="fa fa-check"></i><b>2.3.4</b> Loading Data</a></li>
+<li class="chapter" data-level="2.3.5" data-path="pengenalan-statistik.html"><a href="pengenalan-statistik.html#additional-graphical-and-numerical-summaries"><i class="fa fa-check"></i><b>2.3.5</b> Additional Graphical and Numerical Summaries</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="regresi-linier.html"><a href="regresi-linier.html"><i class="fa fa-check"></i><b>3</b> Regresi Linier</a><ul>
+<li class="chapter" data-level="3.1" data-path="regresi-linier.html"><a href="regresi-linier.html#simple-linear-regression"><i class="fa fa-check"></i><b>3.1</b> Simple Linear Regression</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="regresi-linier.html"><a href="regresi-linier.html#estimating-the-coecients"><i class="fa fa-check"></i><b>3.1.1</b> Estimating the Coeﬃcients</a></li>
+<li class="chapter" data-level="3.1.2" data-path="regresi-linier.html"><a href="regresi-linier.html#assessing-the-accuracy-of-the-coecient-estimates"><i class="fa fa-check"></i><b>3.1.2</b> Assessing the Accuracy of the Coeﬃcient Estimates</a></li>
+<li class="chapter" data-level="3.1.3" data-path="regresi-linier.html"><a href="regresi-linier.html#assessing-the-accuracy-of-the-model"><i class="fa fa-check"></i><b>3.1.3</b> Assessing the Accuracy of the Model</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="regresi-linier.html"><a href="regresi-linier.html#multiple-linear-regression"><i class="fa fa-check"></i><b>3.2</b> Multiple Linear Regression</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="regresi-linier.html"><a href="regresi-linier.html#estimating-the-regression-coecients"><i class="fa fa-check"></i><b>3.2.1</b> Estimating the Regression Coeﬃcients</a></li>
+<li class="chapter" data-level="3.2.2" data-path="regresi-linier.html"><a href="regresi-linier.html#some-important-questions"><i class="fa fa-check"></i><b>3.2.2</b> Some Important Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="regresi-linier.html"><a href="regresi-linier.html#other-considerations-in-the-regression-model"><i class="fa fa-check"></i><b>3.3</b> Other Considerations in the Regression Model</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="regresi-linier.html"><a href="regresi-linier.html#qualitative-predictors"><i class="fa fa-check"></i><b>3.3.1</b> Qualitative Predictors</a></li>
+<li class="chapter" data-level="3.3.2" data-path="regresi-linier.html"><a href="regresi-linier.html#extensions-of-the-linear-model"><i class="fa fa-check"></i><b>3.3.2</b> Extensions of the Linear Model</a></li>
+<li class="chapter" data-level="3.3.3" data-path="regresi-linier.html"><a href="regresi-linier.html#potential-problems"><i class="fa fa-check"></i><b>3.3.3</b> Potential Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="regresi-linier.html"><a href="regresi-linier.html#the-marketing-plan"><i class="fa fa-check"></i><b>3.4</b> The Marketing Plan</a></li>
+<li class="chapter" data-level="3.5" data-path="regresi-linier.html"><a href="regresi-linier.html#comparison-of-linear-regression-with-k-nearest-neighbors"><i class="fa fa-check"></i><b>3.5</b> Comparison of Linear Regression with K-Nearest Neighbors</a></li>
+<li class="chapter" data-level="3.6" data-path="regresi-linier.html"><a href="regresi-linier.html#lab-linear-regression"><i class="fa fa-check"></i><b>3.6</b> Lab: Linear Regression</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="regresi-linier.html"><a href="regresi-linier.html#libraries"><i class="fa fa-check"></i><b>3.6.1</b> Libraries</a></li>
+<li class="chapter" data-level="3.6.2" data-path="regresi-linier.html"><a href="regresi-linier.html#simple-linear-regression-1"><i class="fa fa-check"></i><b>3.6.2</b> Simple Linear Regression</a></li>
+<li class="chapter" data-level="3.6.3" data-path="regresi-linier.html"><a href="regresi-linier.html#multiple-linear-regression-1"><i class="fa fa-check"></i><b>3.6.3</b> Multiple Linear Regression</a></li>
+<li class="chapter" data-level="3.6.4" data-path="regresi-linier.html"><a href="regresi-linier.html#interaction-terms"><i class="fa fa-check"></i><b>3.6.4</b> Interaction Terms</a></li>
+<li class="chapter" data-level="3.6.5" data-path="regresi-linier.html"><a href="regresi-linier.html#non-linear-transformations-of-the-predictors"><i class="fa fa-check"></i><b>3.6.5</b> Non-linear Transformations of the Predictors</a></li>
+<li class="chapter" data-level="3.6.6" data-path="regresi-linier.html"><a href="regresi-linier.html#qualitative-predictors-1"><i class="fa fa-check"></i><b>3.6.6</b> Qualitative Predictors</a></li>
+<li class="chapter" data-level="3.6.7" data-path="regresi-linier.html"><a href="regresi-linier.html#writing-functions"><i class="fa fa-check"></i><b>3.6.7</b> Writing Functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="klasifikasi.html"><a href="klasifikasi.html"><i class="fa fa-check"></i><b>4</b> Klasifikasi</a><ul>
+<li class="chapter" data-level="4.1" data-path="klasifikasi.html"><a href="klasifikasi.html#an-overview-of-classication"><i class="fa fa-check"></i><b>4.1</b> An Overview of Classiﬁcation</a></li>
+<li class="chapter" data-level="4.2" data-path="klasifikasi.html"><a href="klasifikasi.html#why-not-linear-regression"><i class="fa fa-check"></i><b>4.2</b> Why Not Linear Regression?</a></li>
+<li class="chapter" data-level="4.3" data-path="klasifikasi.html"><a href="klasifikasi.html#logistic-regression"><i class="fa fa-check"></i><b>4.3</b> Logistic Regression</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="klasifikasi.html"><a href="klasifikasi.html#the-logistic-model"><i class="fa fa-check"></i><b>4.3.1</b> The Logistic Model</a></li>
+<li class="chapter" data-level="4.3.2" data-path="klasifikasi.html"><a href="klasifikasi.html#estimating-the-regression-coecients-1"><i class="fa fa-check"></i><b>4.3.2</b> Estimating the Regression Coeﬃcients</a></li>
+<li class="chapter" data-level="4.3.3" data-path="klasifikasi.html"><a href="klasifikasi.html#making-predictions"><i class="fa fa-check"></i><b>4.3.3</b> Making Predictions</a></li>
+<li class="chapter" data-level="4.3.4" data-path="klasifikasi.html"><a href="klasifikasi.html#multiple-logistic-regression"><i class="fa fa-check"></i><b>4.3.4</b> Multiple Logistic Regression</a></li>
+<li class="chapter" data-level="4.3.5" data-path="klasifikasi.html"><a href="klasifikasi.html#logistic-regression-for-2-response-classes"><i class="fa fa-check"></i><b>4.3.5</b> Logistic Regression for <span class="math inline">\(&gt;2\)</span> Response Classes</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="klasifikasi.html"><a href="klasifikasi.html#linear-discriminant-analysis"><i class="fa fa-check"></i><b>4.4</b> Linear Discriminant Analysis</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="klasifikasi.html"><a href="klasifikasi.html#using-bayes-theorem-for-classication"><i class="fa fa-check"></i><b>4.4.1</b> Using Bayes’ Theorem for Classiﬁcation</a></li>
+<li class="chapter" data-level="4.4.2" data-path="klasifikasi.html"><a href="klasifikasi.html#linear-discriminant-analysis-for-p-1"><i class="fa fa-check"></i><b>4.4.2</b> Linear Discriminant Analysis for <span class="math inline">\(p = 1\)</span></a></li>
+<li class="chapter" data-level="4.4.3" data-path="klasifikasi.html"><a href="klasifikasi.html#linear-discriminant-analysis-for-p1"><i class="fa fa-check"></i><b>4.4.3</b> Linear Discriminant Analysis for <span class="math inline">\(p&gt;1\)</span></a></li>
+<li class="chapter" data-level="4.4.4" data-path="klasifikasi.html"><a href="klasifikasi.html#quadratic-discriminant-analysis"><i class="fa fa-check"></i><b>4.4.4</b> Quadratic Discriminant Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="klasifikasi.html"><a href="klasifikasi.html#comparison-of-classication-methods"><i class="fa fa-check"></i><b>4.5</b> Comparison of Classiﬁcation Methods</a></li>
+<li class="chapter" data-level="4.6" data-path="klasifikasi.html"><a href="klasifikasi.html#lab-logistic-regression-lda-qda-and-knn"><i class="fa fa-check"></i><b>4.6</b> Lab: Logistic Regression, LDA, QDA, and KNN</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="klasifikasi.html"><a href="klasifikasi.html#the-stock-market-data"><i class="fa fa-check"></i><b>4.6.1</b> The Stock Market Data</a></li>
+<li class="chapter" data-level="4.6.2" data-path="klasifikasi.html"><a href="klasifikasi.html#logistic-regression-1"><i class="fa fa-check"></i><b>4.6.2</b> Logistic Regression</a></li>
+<li class="chapter" data-level="4.6.3" data-path="klasifikasi.html"><a href="klasifikasi.html#linear-discriminant-analysis-1"><i class="fa fa-check"></i><b>4.6.3</b> Linear Discriminant Analysis</a></li>
+<li class="chapter" data-level="4.6.4" data-path="klasifikasi.html"><a href="klasifikasi.html#quadratic-discriminant-analysis-1"><i class="fa fa-check"></i><b>4.6.4</b> Quadratic Discriminant Analysis</a></li>
+<li class="chapter" data-level="4.6.5" data-path="klasifikasi.html"><a href="klasifikasi.html#k-nearest-neighbors"><i class="fa fa-check"></i><b>4.6.5</b> K-Nearest Neighbors</a></li>
+<li class="chapter" data-level="4.6.6" data-path="klasifikasi.html"><a href="klasifikasi.html#an-application-to-caravan-insurance-data"><i class="fa fa-check"></i><b>4.6.6</b> An Application to Caravan Insurance Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html"><i class="fa fa-check"></i><b>5</b> Resampling (Pengambilan Sampel)</a><ul>
+<li class="chapter" data-level="5.1" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#cross-validation"><i class="fa fa-check"></i><b>5.1</b> Cross-Validation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#the-validation-set-approach"><i class="fa fa-check"></i><b>5.1.1</b> The Validation Set Approach</a></li>
+<li class="chapter" data-level="5.1.2" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#leave-one-out-cross-validation"><i class="fa fa-check"></i><b>5.1.2</b> Leave-One-Out Cross-Validation</a></li>
+<li class="chapter" data-level="5.1.3" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#k-fold-cross-validation"><i class="fa fa-check"></i><b>5.1.3</b> k-Fold Cross-Validation</a></li>
+<li class="chapter" data-level="5.1.4" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#bias-variance-trade-o-for-k-fold-cross-validation"><i class="fa fa-check"></i><b>5.1.4</b> Bias-Variance Trade-Oﬀ for k-Fold Cross-Validation</a></li>
+<li class="chapter" data-level="5.1.5" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#cross-validation-on-classication-problems"><i class="fa fa-check"></i><b>5.1.5</b> Cross-Validation on Classiﬁcation Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#the-bootstrap"><i class="fa fa-check"></i><b>5.2</b> The Bootstrap</a></li>
+<li class="chapter" data-level="5.3" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#lab-cross-validation-and-the-bootstrap"><i class="fa fa-check"></i><b>5.3</b> Lab: Cross-Validation and the Bootstrap</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#the-validation-set-approach-1"><i class="fa fa-check"></i><b>5.3.1</b> The Validation Set Approach</a></li>
+<li class="chapter" data-level="5.3.2" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#leave-one-out-cross-validation-1"><i class="fa fa-check"></i><b>5.3.2</b> Leave-One-Out Cross-Validation</a></li>
+<li class="chapter" data-level="5.3.3" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#k-fold-cross-validation-1"><i class="fa fa-check"></i><b>5.3.3</b> k-Fold Cross-Validation</a></li>
+<li class="chapter" data-level="5.3.4" data-path="resampling-pengambilan-sampel.html"><a href="resampling-pengambilan-sampel.html#the-bootstrap-1"><i class="fa fa-check"></i><b>5.3.4</b> The Bootstrap</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html"><i class="fa fa-check"></i><b>6</b> Seleksi dan Regulasi Model Linear</a><ul>
+<li class="chapter" data-level="6.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#subset-selection"><i class="fa fa-check"></i><b>6.1</b> Subset Selection</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#best-subset-selection"><i class="fa fa-check"></i><b>6.1.1</b> Best Subset Selection</a></li>
+<li class="chapter" data-level="6.1.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#stepwise-selection"><i class="fa fa-check"></i><b>6.1.2</b> Stepwise Selection</a></li>
+<li class="chapter" data-level="6.1.3" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#choosing-the-optimal-model"><i class="fa fa-check"></i><b>6.1.3</b> Choosing the Optimal Model</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#shrinkage-methods"><i class="fa fa-check"></i><b>6.2</b> Shrinkage Methods</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#ridge-regression"><i class="fa fa-check"></i><b>6.2.1</b> Ridge Regression</a></li>
+<li class="chapter" data-level="6.2.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#the-lasso"><i class="fa fa-check"></i><b>6.2.2</b> The Lasso</a></li>
+<li class="chapter" data-level="6.2.3" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#selecting-the-tuning-parameter"><i class="fa fa-check"></i><b>6.2.3</b> Selecting the Tuning Parameter</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#dimension-reduction-methods"><i class="fa fa-check"></i><b>6.3</b> Dimension Reduction Methods</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#principal-components-regression"><i class="fa fa-check"></i><b>6.3.1</b> Principal Components Regression</a></li>
+<li class="chapter" data-level="6.3.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#partial-least-squares"><i class="fa fa-check"></i><b>6.3.2</b> Partial Least Squares</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#considerations-in-high-dimensions"><i class="fa fa-check"></i><b>6.4</b> Considerations in High Dimensions</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#high-dimensional-data"><i class="fa fa-check"></i><b>6.4.1</b> High-Dimensional Data</a></li>
+<li class="chapter" data-level="6.4.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#what-goes-wrong-in-high-dimensions"><i class="fa fa-check"></i><b>6.4.2</b> What Goes Wrong in High Dimensions?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#regression-in-high-dimensions"><i class="fa fa-check"></i><b>6.4.3</b> Regression in High Dimensions</a></li>
+<li class="chapter" data-level="6.4.4" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#interpreting-results-in-high-dimensions"><i class="fa fa-check"></i><b>6.4.4</b> Interpreting Results in High Dimensions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#lab-1-subset-selection-methods"><i class="fa fa-check"></i><b>6.5</b> Lab 1: Subset Selection Methods</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#best-subset-selection-1"><i class="fa fa-check"></i><b>6.5.1</b> Best Subset Selection</a></li>
+<li class="chapter" data-level="6.5.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#forward-and-backward-stepwise-selection"><i class="fa fa-check"></i><b>6.5.2</b> Forward and Backward Stepwise Selection</a></li>
+<li class="chapter" data-level="6.5.3" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#choosing-among-models-using-the-validation-set-approach-and-cross-validation"><i class="fa fa-check"></i><b>6.5.3</b> Choosing Among Models Using the Validation Set Approach and Cross-Validation</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#lab-2-ridge-regression-and-the-lasso"><i class="fa fa-check"></i><b>6.6</b> Lab 2: Ridge Regression and the Lasso</a><ul>
+<li class="chapter" data-level="6.6.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#ridge-regression-1"><i class="fa fa-check"></i><b>6.6.1</b> Ridge Regression</a></li>
+<li class="chapter" data-level="6.6.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#the-lasso-1"><i class="fa fa-check"></i><b>6.6.2</b> The Lasso</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#lab-3-pcr-and-pls-regression"><i class="fa fa-check"></i><b>6.7</b> Lab 3: PCR and PLS Regression</a><ul>
+<li class="chapter" data-level="6.7.1" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#principal-components-regression-1"><i class="fa fa-check"></i><b>6.7.1</b> Principal Components Regression</a></li>
+<li class="chapter" data-level="6.7.2" data-path="seleksi-dan-regulasi-model-linear.html"><a href="seleksi-dan-regulasi-model-linear.html#partial-least-squares-1"><i class="fa fa-check"></i><b>6.7.2</b> Partial Least Squares</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="nonlinear.html"><a href="nonlinear.html"><i class="fa fa-check"></i><b>7</b> Nonlinear</a><ul>
+<li class="chapter" data-level="7.1" data-path="nonlinear.html"><a href="nonlinear.html#polynomial-regression"><i class="fa fa-check"></i><b>7.1</b> Polynomial Regression</a></li>
+<li class="chapter" data-level="7.2" data-path="nonlinear.html"><a href="nonlinear.html#step-functions"><i class="fa fa-check"></i><b>7.2</b> Step Functions</a></li>
+<li class="chapter" data-level="7.3" data-path="nonlinear.html"><a href="nonlinear.html#basis-functions"><i class="fa fa-check"></i><b>7.3</b> Basis Functions</a></li>
+<li class="chapter" data-level="7.4" data-path="nonlinear.html"><a href="nonlinear.html#regression-splines"><i class="fa fa-check"></i><b>7.4</b> Regression Splines</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="nonlinear.html"><a href="nonlinear.html#piecewise-polynomials"><i class="fa fa-check"></i><b>7.4.1</b> Piecewise Polynomials</a></li>
+<li class="chapter" data-level="7.4.2" data-path="nonlinear.html"><a href="nonlinear.html#constraints-and-splines"><i class="fa fa-check"></i><b>7.4.2</b> Constraints and Splines</a></li>
+<li class="chapter" data-level="7.4.3" data-path="nonlinear.html"><a href="nonlinear.html#the-spline-basis-representation"><i class="fa fa-check"></i><b>7.4.3</b> The Spline Basis Representation</a></li>
+<li class="chapter" data-level="7.4.4" data-path="nonlinear.html"><a href="nonlinear.html#choosing-the-number-and-locations-of-the-knots"><i class="fa fa-check"></i><b>7.4.4</b> Choosing the Number and Locations of the Knots</a></li>
+<li class="chapter" data-level="7.4.5" data-path="nonlinear.html"><a href="nonlinear.html#comparison-to-polynomial-regression"><i class="fa fa-check"></i><b>7.4.5</b> Comparison to Polynomial Regression</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="nonlinear.html"><a href="nonlinear.html#smoothing-splines"><i class="fa fa-check"></i><b>7.5</b> Smoothing Splines</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="nonlinear.html"><a href="nonlinear.html#an-overview-of-smoothing-splines"><i class="fa fa-check"></i><b>7.5.1</b> An Overview of Smoothing Splines</a></li>
+<li class="chapter" data-level="7.5.2" data-path="nonlinear.html"><a href="nonlinear.html#choosing-the-smoothing-parameter-lambda"><i class="fa fa-check"></i><b>7.5.2</b> Choosing the Smoothing Parameter <span class="math inline">\(\lambda\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="nonlinear.html"><a href="nonlinear.html#local-regression"><i class="fa fa-check"></i><b>7.6</b> Local Regression</a></li>
+<li class="chapter" data-level="7.7" data-path="nonlinear.html"><a href="nonlinear.html#generalized-additive-models"><i class="fa fa-check"></i><b>7.7</b> Generalized Additive Models</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="nonlinear.html"><a href="nonlinear.html#gams-for-regression-problems"><i class="fa fa-check"></i><b>7.7.1</b> GAMs for Regression Problems</a></li>
+<li class="chapter" data-level="7.7.2" data-path="nonlinear.html"><a href="nonlinear.html#gams-for-classication-problems"><i class="fa fa-check"></i><b>7.7.2</b> GAMs for Classiﬁcation Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="nonlinear.html"><a href="nonlinear.html#lab-non-linear-modeling"><i class="fa fa-check"></i><b>7.8</b> Lab: Non-linear Modeling</a><ul>
+<li class="chapter" data-level="7.8.1" data-path="nonlinear.html"><a href="nonlinear.html#polynomial-regression-and-step-functions"><i class="fa fa-check"></i><b>7.8.1</b> Polynomial Regression and Step Functions</a></li>
+<li class="chapter" data-level="7.8.2" data-path="nonlinear.html"><a href="nonlinear.html#splines"><i class="fa fa-check"></i><b>7.8.2</b> Splines</a></li>
+<li class="chapter" data-level="7.8.3" data-path="nonlinear.html"><a href="nonlinear.html#gams"><i class="fa fa-check"></i><b>7.8.3</b> GAMs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html"><i class="fa fa-check"></i><b>8</b> Basis Pohon Keputusan</a><ul>
+<li class="chapter" data-level="8.1" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#the-basics-of-decision-trees"><i class="fa fa-check"></i><b>8.1</b> The Basics of Decision Trees</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#regression-trees"><i class="fa fa-check"></i><b>8.1.1</b> Regression Trees</a></li>
+<li class="chapter" data-level="8.1.2" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#classication-trees"><i class="fa fa-check"></i><b>8.1.2</b> Classiﬁcation Trees</a></li>
+<li class="chapter" data-level="8.1.3" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#trees-versus-linear-models"><i class="fa fa-check"></i><b>8.1.3</b> Trees Versus Linear Models</a></li>
+<li class="chapter" data-level="8.1.4" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#advantages-and-disadvantages-of-trees"><i class="fa fa-check"></i><b>8.1.4</b> Advantages and Disadvantages of Trees</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#bagging-random-forests-boosting"><i class="fa fa-check"></i><b>8.2</b> Bagging, Random Forests, Boosting</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#bagging"><i class="fa fa-check"></i><b>8.2.1</b> Bagging</a></li>
+<li class="chapter" data-level="8.2.2" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#random-forests"><i class="fa fa-check"></i><b>8.2.2</b> Random Forests</a></li>
+<li class="chapter" data-level="8.2.3" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#boosting"><i class="fa fa-check"></i><b>8.2.3</b> Boosting</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#lab-decision-trees"><i class="fa fa-check"></i><b>8.3</b> Lab: Decision Trees</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#fitting-classication-trees"><i class="fa fa-check"></i><b>8.3.1</b> Fitting Classiﬁcation Trees</a></li>
+<li class="chapter" data-level="8.3.2" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#fitting-regression-trees"><i class="fa fa-check"></i><b>8.3.2</b> Fitting Regression Trees</a></li>
+<li class="chapter" data-level="8.3.3" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#bagging-and-random-forests"><i class="fa fa-check"></i><b>8.3.3</b> Bagging and Random Forests</a></li>
+<li class="chapter" data-level="8.3.4" data-path="basis-pohon-keputusan.html"><a href="basis-pohon-keputusan.html#boosting-1"><i class="fa fa-check"></i><b>8.3.4</b> Boosting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html"><i class="fa fa-check"></i><b>9</b> Klasifikasi Nonlinear</a><ul>
+<li class="chapter" data-level="9.1" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#maximal-margin-classier"><i class="fa fa-check"></i><b>9.1</b> Maximal Margin Classiﬁer</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#what-is-a-hyperplane"><i class="fa fa-check"></i><b>9.1.1</b> What Is a Hyperplane?</a></li>
+<li class="chapter" data-level="9.1.2" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#classication-using-a-separating-hyperplane"><i class="fa fa-check"></i><b>9.1.2</b> Classiﬁcation Using a Separating Hyperplane</a></li>
+<li class="chapter" data-level="9.1.3" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#the-maximal-margin-classier"><i class="fa fa-check"></i><b>9.1.3</b> The Maximal Margin Classiﬁer</a></li>
+<li class="chapter" data-level="9.1.4" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#construction-of-the-maximal-margin-classier"><i class="fa fa-check"></i><b>9.1.4</b> Construction of the Maximal Margin Classiﬁer</a></li>
+<li class="chapter" data-level="9.1.5" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#the-non-separable-case"><i class="fa fa-check"></i><b>9.1.5</b> The Non-separable Case</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#support-vector-classiers"><i class="fa fa-check"></i><b>9.2</b> Support Vector Classiﬁers</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#overview-of-the-support-vector-classier"><i class="fa fa-check"></i><b>9.2.1</b> Overview of the Support Vector Classiﬁer</a></li>
+<li class="chapter" data-level="9.2.2" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#details-of-the-support-vector-classier"><i class="fa fa-check"></i><b>9.2.2</b> Details of the Support Vector Classiﬁer</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#support-vector-machines"><i class="fa fa-check"></i><b>9.3</b> Support Vector Machines</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#classication-with-non-linear-decision-boundaries"><i class="fa fa-check"></i><b>9.3.1</b> Classiﬁcation with Non-linear Decision Boundaries</a></li>
+<li class="chapter" data-level="9.3.2" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#the-support-vector-machine"><i class="fa fa-check"></i><b>9.3.2</b> The Support Vector Machine</a></li>
+<li class="chapter" data-level="9.3.3" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#an-application-to-the-heart-disease-data"><i class="fa fa-check"></i><b>9.3.3</b> An Application to the Heart Disease Data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#svms-with-more-than-two-classes"><i class="fa fa-check"></i><b>9.4</b> SVMs with More than Two Classes</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#one-versus-one-classication"><i class="fa fa-check"></i><b>9.4.1</b> One-Versus-One Classiﬁcation</a></li>
+<li class="chapter" data-level="9.4.2" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#one-versus-all-classication"><i class="fa fa-check"></i><b>9.4.2</b> One-Versus-All Classiﬁcation</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#relationship-to-logistic-regression"><i class="fa fa-check"></i><b>9.5</b> Relationship to Logistic Regression</a></li>
+<li class="chapter" data-level="9.6" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#lab-support-vector-machines"><i class="fa fa-check"></i><b>9.6</b> Lab: Support Vector Machines</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#support-vector-classier"><i class="fa fa-check"></i><b>9.6.1</b> Support Vector Classiﬁer</a></li>
+<li class="chapter" data-level="9.6.2" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#support-vector-machine"><i class="fa fa-check"></i><b>9.6.2</b> Support Vector Machine</a></li>
+<li class="chapter" data-level="9.6.3" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#roc-curves"><i class="fa fa-check"></i><b>9.6.3</b> ROC Curves</a></li>
+<li class="chapter" data-level="9.6.4" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#svm-with-multiple-classes"><i class="fa fa-check"></i><b>9.6.4</b> SVM with Multiple Classes</a></li>
+<li class="chapter" data-level="9.6.5" data-path="klasifikasi-nonlinear.html"><a href="klasifikasi-nonlinear.html#application-to-gene-expression-data"><i class="fa fa-check"></i><b>9.6.5</b> Application to Gene Expression Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html"><i class="fa fa-check"></i><b>10</b> Regresi Linier</a><ul>
+<li class="chapter" data-level="10.1" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#the-challenge-of-unsupervised-learning"><i class="fa fa-check"></i><b>10.1</b> The Challenge of Unsupervised Learning</a></li>
+<li class="chapter" data-level="10.2" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#principal-components-analysis"><i class="fa fa-check"></i><b>10.2</b> Principal Components Analysis</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#what-are-principal-components"><i class="fa fa-check"></i><b>10.2.1</b> What Are Principal Components?</a></li>
+<li class="chapter" data-level="10.2.2" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#another-interpretation-of-principal-components"><i class="fa fa-check"></i><b>10.2.2</b> Another Interpretation of Principal Components</a></li>
+<li class="chapter" data-level="10.2.3" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#more-on-pca"><i class="fa fa-check"></i><b>10.2.3</b> More on PCA</a></li>
+<li class="chapter" data-level="10.2.4" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#other-uses-for-principal-components"><i class="fa fa-check"></i><b>10.2.4</b> Other Uses for Principal Components</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#clustering-methods"><i class="fa fa-check"></i><b>10.3</b> Clustering Methods</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#k-means-clustering"><i class="fa fa-check"></i><b>10.3.1</b> K-Means Clustering</a></li>
+<li class="chapter" data-level="10.3.2" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#hierarchical-clustering"><i class="fa fa-check"></i><b>10.3.2</b> Hierarchical Clustering</a></li>
+<li class="chapter" data-level="10.3.3" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#practical-issues-in-clustering"><i class="fa fa-check"></i><b>10.3.3</b> Practical Issues in Clustering</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#lab-1-principal-components-analysis"><i class="fa fa-check"></i><b>10.4</b> Lab 1: Principal Components Analysis</a></li>
+<li class="chapter" data-level="10.5" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#lab-2-clustering"><i class="fa fa-check"></i><b>10.5</b> Lab 2: Clustering</a><ul>
+<li class="chapter" data-level="10.5.1" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#k-means-clustering-1"><i class="fa fa-check"></i><b>10.5.1</b> K-Means Clustering</a></li>
+<li class="chapter" data-level="10.5.2" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#hierarchical-clustering-1"><i class="fa fa-check"></i><b>10.5.2</b> Hierarchical Clustering</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#lab-3-nci60-data-example"><i class="fa fa-check"></i><b>10.6</b> Lab 3: NCI60 Data Example</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#pca-on-the-nci60-data"><i class="fa fa-check"></i><b>10.6.1</b> PCA on the NCI60 Data</a></li>
+<li class="chapter" data-level="10.6.2" data-path="regresi-linier-1.html"><a href="regresi-linier-1.html#clustering-the-observations-of-the-nci60-data"><i class="fa fa-check"></i><b>10.6.2</b> Clustering the Observations of the NCI60 Data</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Kunjungi Github Saya</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Komputasi Statistik</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pengenalan-statistik" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Pengenalan Statistik</h1>
+<div id="what-is-statistical-learning" class="section level2">
+<h2><span class="header-section-number">2.1</span> What Is Statistical Learning?</h2>
+<div id="why-estimate-f" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Why Estimate f?</h3>
+</div>
+<div id="how-do-we-estimate-f" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> How Do We Estimate f?</h3>
+</div>
+<div id="the-trade-o-between-prediction-accuracy-and-model-interpretability" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> The Trade-Oﬀ Between Prediction Accuracy and Model Interpretability</h3>
+</div>
+<div id="supervised-versus-unsupervised-learning" class="section level3">
+<h3><span class="header-section-number">2.1.4</span> Supervised Versus Unsupervised Learning</h3>
+</div>
+<div id="regression-versus-classication-problems" class="section level3">
+<h3><span class="header-section-number">2.1.5</span> Regression Versus Classiﬁcation Problems</h3>
+</div>
+</div>
+<div id="assessing-model-accuracy" class="section level2">
+<h2><span class="header-section-number">2.2</span> Assessing Model Accuracy</h2>
+<div id="measuring-the-quality-of-fit" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Measuring the Quality of Fit</h3>
+</div>
+<div id="the-bias-variance-trade-o" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> The Bias-Variance Trade-Oﬀ</h3>
+</div>
+<div id="the-classication-setting" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> The Classiﬁcation Setting</h3>
+</div>
+</div>
+<div id="introduction-to-r" class="section level2">
+<h2><span class="header-section-number">2.3</span> Introduction to R</h2>
+<div id="basic-commands" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Basic Commands</h3>
+</div>
+<div id="graphics" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Graphics</h3>
+</div>
+<div id="indexing-data" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Indexing Data</h3>
+</div>
+<div id="loading-data" class="section level3">
+<h3><span class="header-section-number">2.3.4</span> Loading Data</h3>
+</div>
+<div id="additional-graphical-and-numerical-summaries" class="section level3">
+<h3><span class="header-section-number">2.3.5</span> Additional Graphical and Numerical Summaries</h3>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="regresi-linier.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Pengenalan-Statistik.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["ebook-template-bakti-siregar.pdf", "ebook-template-bakti-siregar.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
