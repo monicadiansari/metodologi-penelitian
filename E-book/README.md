@@ -1,1 +1,14 @@
-Sebelum mengambil kuliah ini diharapkan anda sudah memiliki pengetahuan dasar mengenai konsep dasar matematika atau ajabar matematika. Matakuliah ini dirancang khusus dengan singkat, padat dan jelas yang biasanya diajarkan dalam tiga semester.Modul ini juga dilengkapi dengan contoh-contoh kasus yang di temukan dalam dunia bisnis dan juga dilengkapi penyelesain dengan menggunakan Excel maupun R.
+Tim penyusun prodi Statistika Matana Univiversity
+
+> 1. Endri Tri Wibowo (alamat email)
+> 2. Jihan Selianovira alamat email)
+> 3. Kevin Sugianto (alamat email)
+> 4. Ardiwan (alamat email)
+
+
+Pembimbing:
+
+Bakti Siregar, M.Sc 
+Email      : siregarbakti@gmail.com / siregar.bakti@matanauniversity.ac.id <br>
+No.Whatsapp: 081369552544
+
