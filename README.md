@@ -1,4 +1,4 @@
-# Tim penyusun prodi Statistika Matana Univiversity
+# Tim penyusun prodi Statistika Matana University
 
 > 1. Endri Tri Wibowo (alamat email)
 > 2. Jihan Selianovira alamat email)
