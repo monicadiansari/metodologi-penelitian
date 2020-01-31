@@ -18,7 +18,8 @@ Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio
 * Klik Enable version control interface for RStudio projects
 * Jika perlu, masukkan jalur untuk eksekusi Git atau SVN Anda jika tersedia. Anda juga dapat membuat atau menambahkan kunci RSA Anda untuk SSH jika perlu.
 
-![](Git.png){ width="50%"}
+<img src="Git.png" alt="Kitten"
+	title="A cute kitten" width="150" height="100" />
 
 ## Online Drive RStudio and GitHub
 
