@@ -67,7 +67,7 @@ Jika anda ingin membuat project yang dilakukan hanya untuk lokal komputer atau P
 * Tentukan di mana menyimpan direktori lokal untuk Proyek.
 * YES check “Create a git repository”.
 
-# Dosen:
+# Penulis:
 Bakti Siregar, M.Sc <br>
 Email : siregarbakti@gmail.com / siregar.bakti@matanauniversity.ac.id <br>
 No.Whatsapp: 081369552544
