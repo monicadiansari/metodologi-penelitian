@@ -33,9 +33,8 @@ Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio
 
 **Langkah 2:** Clone the new GitHub repository to your computer via RStudio
 
-> Bukalah Rstudio anda, dan mulialah membuat projek:
-
-> File > New Project > Version Control > Git. In the “repository URL” paste URL repositori GitHub baru Anda. Contohnya seperti: https://github.com/Bakti-Siregar/Metodologi_Penelitian.git.
+* Bukalah Rstudio anda, dan mulialah membuat projek:
+* File > New Project > Version Control > Git. In the “repository URL” paste URL repositori GitHub baru Anda. Contohnya seperti: https://github.com/Bakti-Siregar/Metodologi_Penelitian.git.
 
 
 **Langkah 3:** Pull perubahan lokal, simpan, komit
