@@ -20,7 +20,7 @@ Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio
 * Jika perlu, masukkan jalur untuk eksekusi Git atau SVN Anda jika tersedia. Anda juga dapat membuat atau menambahkan kunci RSA Anda untuk SSH jika perlu.
 
 <p align="center"> 
-<img src="Git.png" width="400" height="300">
+<img src="https://github.com/Bakti-Siregar/Metodologi_Penelitian/blob/master/Git.png" width="400" height="300">
 </p>
 
 ## Online Drive RStudio and GitHub
