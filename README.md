@@ -1,10 +1,7 @@
 # Kata Pengantar:
-
-<div style="text-align: justify">
   
 Repositori ini digunakan selama kuliah **Metode Penelitian**, semua materi disusun dengan koding R dan Markdwon, jadi Anda diharapkan untuk sering melatihnya dirumah supaya anda familiar dan memahaminya dengan baik [(detail disini)](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan).
 
-</div>
 
 # Persiapan :
 > 1. [Install R](https://cran.r-project.org/)
@@ -55,12 +52,11 @@ Sebaiknya lakukan ini setiap kali Anda menyelesaikan sepotong pekerjaan yang ber
 * Click “Commit”.
 
 **Langkah 4:** Push perubahan lokal maupun online (GitHub)
-<div style="text-align: justify">
+
 Sebelum Anda push (upload) perubahan ke GitHub, pertama-tama Anda harus pull (download) dari GitHub. Mengapa? Jika Anda membuat perubahan pada repo di browser atau dari komputer lain atau (suatu hari) seorang kolaborator telah push, Anda akan lebih bahagia jika Anda menarik perubahan itu sebelum Anda mencoba push.
 
 Klik tombol biru “Pull” pada “Git” tab di RStudio anda. Pastikan anda akan memperoleh pesan “Already up-to-date”. 
 Sekarang klik tombol "Push" hijau untuk mengirim perubahan lokal Anda ke GitHub. Anda akan melihat beberapa pesan dan keterangan setiap perubahan yang telah dilakukan.
-</div>
 
 ## Lokal Drive RStudio and GitHub (Opsional)
 
