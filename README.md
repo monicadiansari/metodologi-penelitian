@@ -33,7 +33,7 @@ Menurut **Suryabrata, 2000 : 15** dan **Sudarwan Danim dan Darwis, 2003 : 69 –
 Karakteristik penelitian kuantitatif adalah sebagai berikut (Nana Sudjana dan Ibrahim, 2001: 6-7; Suharsimi Arikunto, 2002 : 11; Johnson, 2005; dan Kasiram 2008: 149-150):
 
 * Menggunakan pola berpikir deduktif (rasional – empiris atau top-down), yang berusaha memahami suatu fenomena dengan cara menggunakan konsep-konsep yang umum untuk menjelaskan fenomena-fenomena yang bersifat khusus.
-* Logika yang dipakai adalah logika positivistik dan menghundari hal-hal yang bersifat subjektif.
+* Logika yang dipakai adalah logika positivistik dan menghindari hal-hal yang bersifat subjektif.
 * Proses penelitian mengikuti prosedur yang telah direncanakan.
 * Tujuan dari penelitian kuantitatif adalah untuk menyususun ilmu nomotetik yaitu ilmu yang berupaya membuat hokum-hukum dari generalisasinya.
 * Subjek yang diteliti, data yang dikumpulkan, dan sumber data yang dibutuhkan, serta alat pengumpul data yang dipakai sesuai dengan apa yang telah direncanakan sebelumnya.
