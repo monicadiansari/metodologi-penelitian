@@ -22,7 +22,7 @@ Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio
 <img src="https://github.com/Bakti-Siregar/Metodologi_Penelitian/blob/master/Git.png" width="400" height="300">
 </p>
 
-## Online Drive RStudio and GitHub
+## RStudio dan GitHub (Online)
 
 **Langkah 1:**  Buat repo baru di [GitHub](GitHub.com) (di akun Github anda)
 
@@ -57,7 +57,7 @@ Sebelum Anda push (upload) perubahan ke GitHub, pertama-tama Anda harus pull (do
 Klik tombol biru “Pull” pada “Git” tab di RStudio anda. Pastikan anda akan memperoleh pesan “Already up-to-date”. 
 Sekarang klik tombol "Push" hijau untuk mengirim perubahan lokal Anda ke GitHub. Anda akan melihat beberapa pesan dan keterangan setiap perubahan yang telah dilakukan.
 
-## Lokal Drive RStudio and GitHub (Opsional)
+## RStudio dan GitHub (Lokal)
 
 Jika anda ingin membuat project yang dilakukan hanya untuk lokal komputer atau PC, silahkan ikuti petunjuk berikut:
 
