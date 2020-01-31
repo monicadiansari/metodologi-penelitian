@@ -8,6 +8,7 @@ Repositori ini digunakan selama kuliah **Metode Penelitian**, semua materi disus
 > 3. [Petunjuk untuk menginstal R dan Rstudio](http://mercury.webster.edu/aleshunas/R_learning_infrastructure/Downloading_R_and_RStudio.html)
 > 4. [Git](https://git-scm.com/)
 > 5. [Subversion](http://subversion.apache.org/)
+> 6. [Buat Akun Github](https://github.com/)
 
 # Mulai Project degan R Studio
 Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio), Anda harus mengaktifkannya di sistem Anda dengan mengikuti langkah-langkah ini:
