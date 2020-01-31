@@ -1,5 +1,5 @@
-book_filename: "ebook-template-bakti-siregar"
+book_filename: "Bakti"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Bab"
 delete_merged_file: true
