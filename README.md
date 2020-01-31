@@ -1,6 +1,6 @@
 # Kata Pengantar:
   
-Repositori ini digunakan selama kuliah **Metode Penelitian**, semua materi disusun dengan koding R dan Markdwon, jadi Anda diharapkan untuk sering melatihnya dirumah supaya anda familiar dan memahaminya dengan baik. 
+Repositori ini digunakan selama kuliah **[Metode Penelitian](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan)**, semua materi disusun dengan koding R dan Markdwon, jadi Anda diharapkan untuk sering melatihnya dirumah supaya anda familiar dan memahaminya dengan baik. 
 
 # Persiapan :
 > 1. [Install R](https://cran.r-project.org/)
@@ -66,7 +66,7 @@ Jika anda ingin membuat project yang dilakukan hanya untuk lokal komputer atau P
 * Tentukan di mana menyimpan direktori lokal untuk Proyek.
 * YES check “Create a git repository”.
 
-> Mulai Belajar [(Klik disini)](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan).
+# Mulai Belajar [(Klik disini)](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan).
 
 
 # Penulis:
