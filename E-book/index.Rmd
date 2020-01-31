@@ -1,6 +1,6 @@
 --- 
-title: "Komputasi Statistik"
-author: "Bakti Siregar"
+title: "Judul Proposal Penelitian"
+author: "Nama Anda"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -17,18 +17,43 @@ description: ""
 knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'), 'packages.bib')
 ```
 
-# Pendahuluan
+# Abstrak
 <div style="text-align: justify"> 
 
-Pengantar komputasi statistik ini di desain khusus untuk memudahkan mahasiswa, peneliti maupun profesional dalam memahami sekumpulan data yang luas dan kompleks yang sering muncul di bidang sains. Buku ini menyajikan beberapa teknik pemodelan dan prediksi yang berperan penting, bersama dengan aplikasi yang relevan. Topik meliputi Pengenalan Statistik *(Statistical Learning)*, Regresi Linier *(Linear Regression)*, Klasifikasi *(Classification)*, Resampling *(Resampling Methods)*, Seleksi dan Regulasi Model Linear *(Linear Model Selection and Regularization)*, Nonlinear *(Nonlinear Methods)*, Pohon Keputusan (Decision Tree Method),  Algoritma Machine Learning *(Support vector machine)*, Klasifikasi Nonlabel *(Unsupervised Classification)*, dan masih banyak lagi.
+Pembaca akan lebih mudah membayangkan apa saja isi dari karya ilmiah. Selain itu, jika abstrak dikemas dengan menarik, maka tentu akan mengundang rasa penasaran untuk membaca lebih lanjut. Abstrak diumpamakan seperti cover book, jika tidak menarik, tentu pembaca akan malas untuk membaca isi keseluruhan dari karya ilmiah tersebut
 
-Buku ini menggunakan grafik berwarna dan contoh kasus yang nyata digunakan untuk menggambarkan metode yang disajikan. Buku ini ditargetkan untuk untuk memfasilitasi penggunaan teknik pembelajaran statistik ini oleh para praktisi di bidang sains, industri, dan bidang lainnya, setiap bab berisi tutorial tentang penerapan analisis dan metode yang disajikan dalam [R](https://repo.bppt.go.id/cran/), platform perangkat lunak statistik sumber terbuka yang sangat populer.
+## Manfaat Abstrak :
 
-<br>
-**Kata Pengantar**
-<br>
+1. To the point. Pembaca langsung disuguhkan pada ide pokok yang akan dibahas tanpa perlu membaca isi/pembahasannya. Pembaca dapat menentukan apakah ia akan melanjutkan membaca atau tidak. Ini akan menghemat waktu pembaca
+2. Terdapat Keyword (Kata Kunci). Ini sangat penting untuk menekankan kepada pembaca kata yang penting dari karya ilmiah ini. Keyword sifatnya lebih mudah diingat, simpel namun menggambarkan isi dari karya ilmiah, makalah maupun skripsi. Selain itu kata kunci mempermudah penyimpanan secara elektronik.
+3. Membantu penulis untuk menentukan pokok/rumusan masalah, teori dan metode penelitian yang digunakan, sumber data, variabel, hasil penelitian, dan simpulan dari penelitian tersebut. Membuat abstrak di awal dapat mencegah penulis untuk out of topic atau keluar dari poko bahasan
 
-Puji syukur senantiasa kita panjatkan kehadirat Tuhan Yang Maha Esa atas semua limpahan rahmat-Nya sehingga tim dan saya dapat menyelesaikan penyusunan buku yang berjudul **"Komputasi Statistika"**, meskipun dengan sangat sederhana. Harapan kami, kirannya buku yang telah tersusun ini dapat bermanfaat menjadi salah satu rujukan maupun pedoman bagi para pembaca, menambah wawasan serta dapat menjadi inspirasi dalam memahami ilmu statistik.  
+Karena tujuannya untuk memudahkan pembaca, maka Penulis harus mampu memberikan gambaran yang jelas dan mudah dimengerti dengan singkat, padat dan jelas
+
+Lalu bagaimana penulisan abstrak yang baik? Berikut penjelasannya
+
+## Judul Tulisan Abstrak
+Judul adalah kekuatan utama. Buatlah judul dengan menarik, namun tetap sesuai dengan pokok pembahasan. Judul yang menarik akan membuat pembaca penasaran dan lanjut untuk membaca.
+
+## Latar belakang Tulisan Abstrak
+Ini dari latar belakang adalah MENGAPA kamu mengangkat topik ini. Jelaskan dengan singkat asal mula topik ini dipilih, seperti misalnya berawal dari masalah sosial, lingkungan atau kehidupan sehari-hari. Kamu tidak mungkin mengangkat suatu topik jika tidak ada permasalahan tersebut sebelumnya. Karena inti dari karya tulis adalah menyelesaikan suatu masalah yang ada melalui penelitian ini.
+
+## Metode Penelitian, Sumber data, Variabel dan pendukung lain
+Cantumkan metode penelitian yang kamu gunakan, sumber data penelitian, variabel serta data pendukung lain sebagai dasar pembuatan karya ilmiah tersebut.
+
+## Gambaran Tulisan Abstrak
+Jelaskan gambaran dari karya ilmiah kamu dengan singkat, padat namun jelas dan mudah dipahami. Gunakan kata tanya KAPAN, BAGAIMANA, DIMANA dll untuk menjelaskan gambaran tersebut. Kamu bisa menyesuaikannya sesuai dengan pembahasan yang kamu buat.
+
+## Simpulan Tulisan Abstrak
+Terakhir, Jelaskan simpulan dari hasil penelitian serta solusi untuk mengatasi permasalahan. Intinya, simpulan harus menjawab pertanyaan dan rumusan masalah yang ada secara singkat.
+
+## Kata Kunci (Keyword)
+Tulis kata kunci yang penting di bawah simpulan. Kamu harus menyertakan minimal 3 kata kunci
+
+
+# Kata Pengantar
+
+Puji syukur senantiasa kita panjatkan kehadirat Tuhan Yang Maha Esa atas semua limpahan rahmat-Nya sehingga tim dan saya dapat menyelesaikan penyusunan buku yang berjudul **"Metode Penelitian"**, meskipun dengan sangat sederhana. Harapan kami, kirannya buku yang telah tersusun ini dapat bermanfaat menjadi salah satu rujukan maupun pedoman bagi para pembaca, menambah wawasan serta dapat menjadi inspirasi dalam memahami ilmu statistik.  
 
 Sebagai penulis, saya **Bakti Siregar M.Sc** mengakui bahwasanya masih banyak kekurangan yang terkandung di dalamnya. Oleh sebab itu, dengan penuh kerendahan hati saya berharap kepada para pembaca untuk memberikan kritik dan saran demi lebih memperbaiki buku ini.
 
