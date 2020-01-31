@@ -4,7 +4,7 @@
 
 # Manfaat Metodologi Penelitian
 
-> a. Menggunakan metodologi, peneliti dapat memudahkan pekerjaannya agar sampai pada tahap pengambilan keputusan atau kesimpulan-kesimpulan.
+* a. Menggunakan metodologi, peneliti dapat memudahkan pekerjaannya agar sampai pada tahap pengambilan keputusan atau kesimpulan-kesimpulan.
 > b. Menggunakan metodologi, para peneliti dapat mengatasi berbagai keterbatasan yang ada, misalnya keterbatasan waktu, biaya, tenaga, etik, dan lain-lain.
 > c. Kesimpulan yang diambil oleh peneliti dapat terpercaya.
 > d. Kesimpulan yang diambil dapat digunakan untuk memecahkan permasalahan.
