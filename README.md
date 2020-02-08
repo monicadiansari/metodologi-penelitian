@@ -66,6 +66,8 @@ Jika anda ingin membuat project yang dilakukan hanya untuk lokal komputer atau P
 * Tentukan di mana menyimpan direktori lokal untuk Proyek.
 * YES check “Create a git repository”.
 
+## [Petunjuk Menggunakan Markdown](https://www.markdownguide.org/basic-syntax/)
+
 ## Mulai Belajar [Klik disini](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan).
 
 
