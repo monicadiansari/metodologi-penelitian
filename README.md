@@ -69,10 +69,10 @@ Jika anda ingin membuat project yang dilakukan hanya untuk lokal komputer atau P
 ## [Petunjuk Menggunakan Markdown](https://www.markdownguide.org/basic-syntax/)
 <br>
 
-# Mulai Belajar [Klik disini](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan).
+### Mulai Belajar [Klik disini](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan).
 
 
-# Penulis:
+## Penulis:
 Bakti Siregar, M.Sc <br>
 Email : siregarbakti@gmail.com / siregar.bakti@matanauniversity.ac.id <br>
 No.Whatsapp: 081369552544
