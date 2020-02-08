@@ -1,8 +1,8 @@
-# [Kata Pengantar:]()
+# Kata Pengantar:
   
 Repositori ini digunakan selama kuliah **[Metode Penelitian](https://github.com/Bakti-Siregar/Metodologi_Penelitian/wiki/A.-Pendahuluan)**, semua materi disusun dengan koding R dan Markdwon, jadi Anda diharapkan untuk sering melatihnya dirumah supaya anda familiar dan memahaminya dengan baik. 
 
-# [Persiapan :]()
+# Persiapan :
 > 1. [Install R](https://cran.r-project.org/)
 > 2. [Install Rstudio](https://rstudio.com/products/rstudio/)
 > 3. [Petunjuk untuk menginstal R dan Rstudio](http://mercury.webster.edu/aleshunas/R_learning_infrastructure/Downloading_R_and_RStudio.html)
@@ -10,7 +10,7 @@ Repositori ini digunakan selama kuliah **[Metode Penelitian](https://github.com/
 > 5. [Subversion](http://subversion.apache.org/)
 > 6. [Buat Akun Github](https://github.com/)
 
-# [Setting Project degan R Studio]()
+# Setting Project degan R Studio
 Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio), Anda harus mengaktifkannya di sistem Anda dengan mengikuti langkah-langkah ini:
 
 * Klik Global Options (Tools menu Rstudio)
@@ -22,7 +22,7 @@ Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio
 <img src="https://github.com/Bakti-Siregar/Metodologi_Penelitian/blob/master/Git.png" width="400" height="300">
 </p>
 
-## [RStudio dan GitHub (Online)]()
+## RStudio dan GitHub (Online)
 
 **Langkah 1:**  Buat repo baru di [GitHub](GitHub.com) (di akun Github anda)
 
@@ -57,7 +57,7 @@ Sebelum Anda push (upload) perubahan ke GitHub, pertama-tama Anda harus pull (do
 Klik tombol biru “Pull” pada “Git” tab di RStudio anda. Pastikan anda akan memperoleh pesan “Already up-to-date”. 
 Sekarang klik tombol "Push" hijau untuk mengirim perubahan lokal Anda ke GitHub. Anda akan melihat beberapa pesan dan keterangan setiap perubahan yang telah dilakukan.
 
-## [RStudio dan GitHub (Lokal)]()
+## RStudio dan GitHub (Lokal)
 
 Jika anda ingin membuat project yang dilakukan hanya untuk lokal komputer atau PC, silahkan ikuti petunjuk berikut:
 
