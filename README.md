@@ -11,7 +11,7 @@ Repositori ini digunakan selama kuliah **[Metode Penelitian](https://github.com/
 > 6. [Buat Akun Github](https://github.com/)
 
 # Setting Project degan R Studio
-Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversio), Anda harus mengaktifkannya di sistem Anda dengan mengikuti langkah-langkah ini:
+Setelah Anda menginstal sistem Kontrol Versi yang Anda sukai (Git atau Subversion), Anda harus mengaktifkannya di sistem Anda dengan mengikuti langkah-langkah ini:
 
 * Klik Global Options (Tools menu Rstudio)
 * Klik Git/SVN
